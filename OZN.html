@@ -1,0 +1,254 @@
+<html>
+  <head>
+    <title>Mountains</title>
+    <style type="text/css">
+      body {
+        background-color: #758a8a;
+      }
+
+      .munte1 {
+        width: 0;
+        height: 0;
+        border-left: 80px solid transparent;
+        border-right: 250px solid transparent;
+        border-bottom: 330px solid #5d5959;
+        position: absolute;
+        bottom: 0px;
+      }
+
+      .zapada {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 22px solid transparent;
+        border-right: 110px solid transparent;
+        border-bottom: 128px solid #f1eded;
+        margin-left: -26px;
+        transform: rotateZ(4deg);
+      }
+
+      .munte2 {
+        width: 0;
+        height: 0;
+        border-left: 200px solid transparent;
+        border-right: 250px solid transparent;
+        border-bottom: 330px solid #695e5e;
+        position: absolute;
+        margin-left: 230px;
+        bottom: 0px;
+      }
+
+      .zapada2 {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 66px solid transparent;
+        border-right: 110px solid transparent;
+        border-bottom: 128px solid #f1eded;
+        margin-left: -70px;
+        transform: rotateZ(4deg);
+      }
+
+      .zapada3 {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 33px solid transparent;
+        border-right: 176px solid transparent;
+        border-bottom: 128px solid #f1eded;
+        margin-left: -55px;
+        transform: rotateZ(17deg);
+        margin-top: 16px;
+      }
+
+      .muntem {
+        border-left: 76px solid transparent;
+        border-right: 110px solid transparent;
+        border-bottom: 128px solid #5a4f4f;
+        position: absolute;
+        z-index: -1;
+        margin-left: 200px;
+        bottom: 50px;
+      }
+
+      .muntem {
+        border-left: 76px solid transparent;
+        border-right: 110px solid transparent;
+        border-bottom: 128px solid #6d6969;
+        position: absolute;
+        z-index: -1;
+        margin-top: -200px;
+        margin-left: 200px;
+      }
+
+      .luna {
+        width: 150px;
+        height: 150px;
+        border-bottom: 30px solid white;
+        border-radius: 100%;
+        position: absolute;
+        transform: rotateZ(70deg);
+        margin-left: 150px;
+        margin-top: 10px;
+      }
+
+      .munte3 {
+        border-left: 110px solid transparent;
+        border-right: 110px solid transparent;
+        border-bottom: 178px solid #6d6969;
+        position: absolute;
+        z-index: 1;
+        margin-left: 560px;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .capsula {
+        width: 90px;
+        height: 50px;
+        border-radius: 100% 100% 10px 10px;
+        background: linear-gradient(to bottom, gray 0%, #1f8088 150%);
+        position: absolute;
+        transform: rotateZ(-90deg);
+        margin-left: -45px;
+        margin-top: 75px;
+      }
+
+      .far {
+        width: 20px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #c3c30b;
+        position: absolute;
+        margin-top: 170px;
+        transform: rotateZ(-65deg);
+        margin-left: 33px;
+      }
+
+      .far2 {
+        width: 30px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #c3c30b;
+        position: absolute;
+        margin-top: 95px;
+        transform: rotateZ(-90deg);
+        margin-left: 40px;
+      }
+
+      .far3 {
+        width: 20px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #c3c30b;
+        position: absolute;
+        margin-top: 18px;
+        transform: rotateZ(65deg);
+        margin-left: 33px;
+      }
+
+      .far,
+      .far2,
+      .far3 {
+        animation-name: m;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes m {
+        from {
+          background-color: #c3c30b;
+        }
+
+        to {
+          background-color: yellow;
+        }
+      }
+
+      .ozn {
+        background-color: #5f5858;
+        width: 70px;
+        height: 200px;
+        border-radius: 100%;
+        margin-left: 850px;
+        transform: rotateZ(90deg) scale(0);
+        bottom: 0;
+        position: absolute;
+        animation-name: move;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        z-index: -1;
+        animation-delay: 1s;
+      }
+
+      @keyframes move {
+        0% {
+          top: 450px;
+          transform: rotateZ(90deg);
+        }
+
+        25% {
+          top: 250px;
+          margin-left: 400px;
+          transform: rotateZ(100deg) scale(1);
+        }
+
+        50% {
+          margin-left: 650px;
+        }
+
+        70% {
+          top: 250px;
+          margin-left: 650px;
+        }
+
+        100% {
+          margin-top: -300px;
+          transform: rotateZ(90deg) scale(0);
+          margin-left: 650px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="munte1">
+      <div class="zapada"></div>
+    </div>
+
+    <div class="muntem"></div>
+
+    <div class="munte2">
+      <div class="zapada2"></div>
+    </div>
+
+    <div class="munte3"></div>
+
+    <div
+      style="
+        margin-left: 1350px;
+        transform: rotateY(180deg);
+        position: absolute;
+        bottom: 0;
+      "
+    >
+      <div class="munte1">
+        <div class="zapada"></div>
+      </div>
+      <div class="muntem"></div>
+      <div class="munte2" style="border-bottom: 330px solid #5f5656">
+        <div class="zapada3"></div>
+      </div>
+    </div>
+
+    <div class="luna"></div>
+
+    <div class="ozn">
+      <div class="capsula"></div>
+      <div class="far"></div>
+      <div class="far2"></div>
+      <div class="far3"></div>
+    </div>
+  </body>
+</html>
